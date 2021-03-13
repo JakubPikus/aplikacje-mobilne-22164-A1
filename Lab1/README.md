@@ -1,4 +1,9 @@
-# aplikacje-mobilne-22164-A1
+# Lab 1
+
+<h2> Kalkulator </h2>
+
+
+
 
 ```js
 import { StatusBar } from 'expo-status-bar';
