@@ -1,18 +1,28 @@
 import React from 'react';
-import { TouchableOpacity, Text, View} from 'react-native';
+import { TouchableOpacity, Text, View, StyleSheet} from 'react-native';
+import styles from './styles';
 
-export default function HomeScreen({ navigation }) {
+export default function start({ navigation }) {
   return (
-    <View>
-        <TouchableOpacity onPress={() => navigation.push('spread')}>
-            <Text >Spread</Text>
+    <View style={styles.startView}>
+        <TouchableOpacity style={styles.startButton} onPress={() => navigation.push('Spread')}>
+            <Text style={styles.startText}>Spread</Text>
         </TouchableOpacity >
-        <TouchableOpacity  onPress={() => navigation.push('rest')}>
-            <Text >Rest</Text>
+        <TouchableOpacity style={styles.startButton}  onPress={() => navigation.push('Rest')}>
+            <Text style={styles.startText} >Rest</Text>
         </TouchableOpacity >
-        <TouchableOpacity  onPress={() => navigation.push('hook')}>
-            <Text >Hook</Text>
+        <TouchableOpacity style={styles.startButton}  onPress={() => navigation.push('Hook')}>
+            <Text style={styles.startText}>Hook</Text>
         </TouchableOpacity >
     </View>
   );
 }
+
+
+
+
+
+
+
+
+
