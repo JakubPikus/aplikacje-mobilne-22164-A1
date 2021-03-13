@@ -29,7 +29,7 @@ export default function start({ navigation }) {
 ```
 
 
-# Spread </h2>
+# Spread 
 <img src="zrzuty/2.png" alt="spread"  style="float: left;" />
 
 ```js
@@ -75,7 +75,7 @@ export default function spread({ navigation }) {
 
 
 
-#Rest
+# Rest
 <img src="zrzuty/3.png" alt="rest"  style="float: left;" />
 ```js
 import React from 'react';
@@ -114,7 +114,7 @@ export default function rest({ navigation }) {
 }
 ```
 
-#Hook
+# Hook
 <img src="zrzuty/4.png" alt="hook"  style="float: left;" />
 
 ```js
@@ -159,7 +159,7 @@ export default function hook({ navigation }) {
 }
 ```
 
-#App.js
+# App.js
 ```js
 import React from 'react';
 import {StyleSheet} from 'react-native';
