@@ -64,10 +64,6 @@ export default function spread({ navigation }) {
           <Text style={styles.spreadText} >Hook</Text>
         </TouchableOpacity >
       </View>
-
-
-
-      
     </View>
   );
 }
@@ -76,7 +72,9 @@ export default function spread({ navigation }) {
 
 
 # Rest
+
 <img src="zrzuty/3.png" alt="rest"  style="float: left;" />
+
 ```js
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
