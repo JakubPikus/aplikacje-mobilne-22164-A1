@@ -4,7 +4,7 @@ import styles from './styles';
 
 
 
-export default class step extends Component {
+export default class Step extends Component {
   render(){
     return (
       <View style={styles.hookView}>

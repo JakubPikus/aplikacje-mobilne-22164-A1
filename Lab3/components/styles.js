@@ -23,20 +23,39 @@ const styles = StyleSheet.create({
       color: '#ffffff',
       fontWeight: 'bold',
     },
+
     
-    spreadView:{
+    
+    sortViewArray:{
+       padding: 40,
+       
+       
+    },
+    sortButtons:{
         flexDirection: 'row',
+        padding: 10,
         justifyContent: 'space-around',
     },
-    spreadText:{
-        fontWeight: 'bold',
-        color: '#1791e8',
-        fontSize: 20
+    sortArray:{
+        borderColor: '#1791e8',
+        borderRadius: 20,
+        borderWidth: 3,
+        padding: 7,
+        textAlign:'center',
     },
-    spreadDescription:{
-        width: 350,
-        alignSelf: 'center',
-        padding: 40
+
+
+    lazyAlign:{
+        alignItems: "center",
+        paddingTop: 20,
+    },
+
+    lazyText:{
+        backgroundColor: '#518226',
+        height: 550,
+        width: 380,
+        borderRadius: 20,
+        padding: 10,
     },
 
 
@@ -56,13 +75,10 @@ const styles = StyleSheet.create({
     restView:{
         flexDirection: 'row',
     },
-    restText:{
-        backgroundColor: '#518226',
-        height: 300,
-        width: 380,
-        borderRadius: 20,
-        padding: 10,
-    },
+    
+
+    
+    
 
 
 
@@ -88,9 +104,7 @@ const styles = StyleSheet.create({
         padding: 10,
         width: 350,
     },
-    viewAlign:{
-        alignItems: "center",
-    },
+
     hookText:{
         color: '#ffffff', 
         fontWeight: 'bold', 

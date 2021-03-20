@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity, Text, View, StyleSheet} from 'react-native';
 import styles from './styles';
 
-export default function start({ navigation }) {
+export default function Start({ navigation }) {
   return (
     <View style={styles.startView}>
         <TouchableOpacity style={styles.startButton} onPress={() => navigation.push('Sortowanie i filtrowanie')}>

@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { Component, Suspense } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import styles from './styles';
-import { Icon } from 'react-native-elements'
 
 
-export default class lazy extends Component {
+const LazyComp = React.lazy(() => import('./Load'))
+
+export default class Lazy extends Component {
   render(){
     return (
-      <View style={styles.viewAlign}>
-        <View style={styles.restView}>
-        
-        </View> 
-        <View style={styles.restText}>
+      <View style={styles.lazyAlign}>
+         
+        <View style={styles.lazyText}>
+
+            <Suspense fallback={<Text>Loading...</Text>}>
+              <LazyComp length="100000"/>
+            </Suspense>
         
         </View>
       </View>
   );
   }
 }
+
+
