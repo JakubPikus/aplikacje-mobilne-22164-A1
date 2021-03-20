@@ -61,22 +61,6 @@ const styles = StyleSheet.create({
 
 
 
-
-    restStyle:{
-        fontWeight: 'bold',
-        color: '#518226',
-        padding: 2
-    },
-    restButton:{
-        
-        flexDirection: 'row',
-        padding: 15
-    },
-    restView:{
-        flexDirection: 'row',
-    },
-    
-
     
     
 
@@ -92,24 +76,7 @@ const styles = StyleSheet.create({
         
 
     },
-    hookButton:{
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        marginTop: 30
-    },
-    hookBorderText:{
-        borderWidth: 4,
-        borderColor: '#ffffff',
-        borderRadius: 35,
-        padding: 10,
-        width: 350,
-    },
-
-    hookText:{
-        color: '#ffffff', 
-        fontWeight: 'bold', 
-        fontSize: 20
-    }
+    
     
 
   })
