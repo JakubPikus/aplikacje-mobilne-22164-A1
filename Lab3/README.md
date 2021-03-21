@@ -20,6 +20,7 @@
 <img src="zrzuty/3.png" alt="spread"  style="float: left;" />
 
 <p>Sort.js</p>
+
 ```js
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
@@ -120,6 +121,7 @@ export default class Sort extends Component {
 <img src="zrzuty/5.png" alt="rest"  style="float: left;" />
 
 <p>Lazy.js</p>
+
 ```js
 import React, { Component, Suspense } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
@@ -147,6 +149,7 @@ export default class Lazy extends Component {
 ```
 
 <p>Load.js</p>
+
 ```js
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
@@ -250,6 +253,7 @@ export default class Step extends Component {
 
 
 # styles.js
+
 ```js
 import { StyleSheet } from 'react-native';
 
