@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
       backgroundColor: '#8BC8F3',
       borderRadius: 15,
       textAlign: 'center',
-
     },
     TextInputText: {
       top: -5,
@@ -49,7 +48,27 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         padding: 15,
         width: 350,
-    }
+    },
+    SelectPickerView: {
+      flex: 1,
+      justifyContent: 'space-around',
+      width: 100,
+
+    },
+    SelectPickerViewText: {
+      borderColor: '#518226',
+      backgroundColor: '#518226',
+      borderRadius: 30,
+      borderWidth: 3,
+      padding: 15,
+      width: 350,
+    },
+    Select:{
+      backgroundColor: '#8BC8F3',
+      borderRadius: 15,
+      textAlign: 'center',
+
+    },
 
     
 

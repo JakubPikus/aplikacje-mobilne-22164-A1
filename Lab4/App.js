@@ -5,7 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import  Start  from './components/Start'
 import  TextInputComp  from './components/TextInput'
 import  SelectPicker  from './components/SelectPicker'
-import  Switch  from './components/Switch'
+import  SwitchComp  from './components/Switch'
 import  DatePicker  from './components/DatePicker'
 import  ToastAndroid  from './components/ToastAndroid'
 
@@ -31,7 +31,7 @@ export default function App() {
             }}/>
         <Stack.Screen name="TextInput" component={TextInputComp} options={{  title: 'TextInput', headerTintColor: '#1791e8' }} />
         <Stack.Screen name="Select i Picker" component={SelectPicker} options={{ title: 'Select i Picker', headerTintColor: '#518226' }}/>
-        <Stack.Screen name="Switch" component={Switch} options={{ title: 'Switch', headerTintColor: '#e09d00'}}/>
+        <Stack.Screen name="Switch" component={SwitchComp} options={{ title: 'Switch', headerTintColor: '#e09d00'}}/>
         <Stack.Screen name="DatePicker" component={DatePicker} options={{ title: 'DatePicker', headerTintColor: '#e09d00'}}/>
         <Stack.Screen name="ToastAndroid" component={ToastAndroid} options={{ title: 'ToastAndroid', headerTintColor: '#e09d00'}}/>
         

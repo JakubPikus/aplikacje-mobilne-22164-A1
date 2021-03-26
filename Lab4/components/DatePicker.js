@@ -6,7 +6,7 @@ import styles from './styles';
 export default class DatePicker extends Component {
   render(){
     return (
-      <View style={styles.lazyAlign}>
+      <View>
          
         
       </View>
