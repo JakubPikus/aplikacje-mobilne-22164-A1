@@ -27,11 +27,13 @@ const styles = StyleSheet.create({
     TextInput: {
       backgroundColor: '#8BC8F3',
       borderRadius: 15,
+      textAlign: 'center',
 
     },
     TextInputText: {
       top: -5,
-
+      color: '#ffffff',
+      alignSelf: 'center'
     },
 
     TextInputView: {
