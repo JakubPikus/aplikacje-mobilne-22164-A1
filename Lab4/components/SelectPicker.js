@@ -33,31 +33,33 @@ export default function SelectPicker(){
   return (
     <View style={styles.SelectPickerView}>
       <View style={styles.SelectPickerViewText}>
-        <Select
-          label="Kategoria"
-          style={styles.Select}
-          items={category}
-          selectedValue={selectedCategory}
-          onValueChange={size => {
-            setSelectedCategory(size);
-            setSelectedGames(null);
-            setAvailableGames(games.filter(i => i.category.includes(size)));
-          }}
-        />
+        <View style={styles.SelectPickerViewText2}>
+          <Select
+            label="Kategoria"
+            items={category}
+            selectedValue={selectedCategory}
+            onValueChange={size => {
+              setSelectedCategory(size);
+              setSelectedGames(null);
+              setAvailableGames(games.filter(i => i.category.includes(size)));
+            }}
+          />
+        </View>
       </View>
       <View style={styles.SelectPickerViewText}>
-        <Select
-          label="Gra"
-          style={styles.Select}
-          items={availableGames}
-          selectedValue={selectedGames}
-          onValueChange={garment => {
-            setSelectedGames(garment);
-            setSelection(
-              `${selectedCategory} ${games.find(i => i.value === garment).label}`
-            );
-          }}
-        />
+        <View style={styles.SelectPickerViewText2}>
+          <Select
+            label="Gra"
+            items={availableGames}
+            selectedValue={selectedGames}
+            onValueChange={garment => {
+              setSelectedGames(garment);
+              setSelection(
+                `${selectedCategory} ${games.find(i => i.value === garment).label}`
+              );
+            }}
+          />
+        </View>
       </View>
     </View>
   );

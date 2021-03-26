@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     SelectPickerView: {
       flex: 1,
       justifyContent: 'space-around',
-      width: 100,
+      alignItems: 'center'
 
     },
     SelectPickerViewText: {
@@ -62,13 +62,17 @@ const styles = StyleSheet.create({
       borderWidth: 3,
       padding: 15,
       width: 350,
+      alignItems: 'center',
     },
-    Select:{
-      backgroundColor: '#8BC8F3',
-      borderRadius: 15,
-      textAlign: 'center',
-
+    SelectPickerViewText2: {
+      borderColor: '#65a230',
+      backgroundColor: '#65a230',
+      borderRadius: 30,
+      borderWidth: 3,
+      padding: 15,
+      width: 250,
     },
+   
 
     
 
