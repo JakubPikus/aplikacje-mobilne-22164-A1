@@ -24,59 +24,31 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
     },
 
-    
-    
-    sortViewArray:{
-       padding: 40,
-       
-       
+    TextInput: {
+      backgroundColor: '#8BC8F3',
+      borderRadius: 15,
+
     },
-    sortButtons:{
-        flexDirection: 'row',
-        padding: 10,
-        justifyContent: 'space-around',
+    TextInputText: {
+      top: -5,
+
     },
-    sortArray:{
+
+    TextInputView: {
+      flex: 1,
+      justifyContent: 'space-around',
+      alignItems: 'center'
+
+    },
+    TextInputViewText: {
         borderColor: '#1791e8',
-        borderRadius: 20,
+        backgroundColor: '#1791e8',
+        borderRadius: 30,
         borderWidth: 3,
-        padding: 7,
-        textAlign:'center',
-    },
+        padding: 15,
+        width: 350,
+    }
 
-
-    lazyAlign:{
-        alignItems: "center",
-        paddingTop: 20,
-    },
-
-    lazyText:{
-        backgroundColor: '#518226',
-        height: 550,
-        width: 380,
-        borderRadius: 20,
-        padding: 10,
-    },
-
-
-
-
-    
-    
-
-
-
-
-
-
-    hookView:{
-        backgroundColor: '#e09d00',
-        flex: 1,
-        justifyContent: 'space-around',
-        
-
-    },
-    
     
 
   })
