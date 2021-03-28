@@ -112,6 +112,32 @@ const styles = StyleSheet.create({
       height: 50,
       justifyContent: "center",
     },
+    ToastView:{
+      backgroundColor: '#7a0ce9',
+      flex: 1,
+      alignItems: "center",
+      justifyContent: 'center',
+      padding: 60
+    },
+    ToastViewIn:{
+      backgroundColor: '#7a0ce9',
+      flex: 1,
+      alignItems: "center",
+      justifyContent: 'center',
+
+    },
+    ToastViewInMid:{
+      borderColor: '#ffffff',
+      backgroundColor: '#ffffff',
+      borderRadius: 30,
+      width: 250,
+      height: 70,
+      justifyContent: "center",
+    },
+    ToastText:{
+      textAlign: 'center',
+      fontSize: 14
+    },
     
   })
 
