@@ -402,13 +402,6 @@ export default class DatePickerComp extends Component {
 ```
 
 
-# ToastAndroid
-
-<br>
-<p>Po wciśnięciu ikonki, dostajemy informację o wymaganym czasie do wyłączenia się modala.</p>
-<img src="zrzuty/11.png" alt="hook"  style="float: left;" />
-<img src="zrzuty/12.png" alt="hook"  style="float: left;" />
-
 # styles.js
 
 ```js
