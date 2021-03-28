@@ -6,7 +6,7 @@ import  Start  from './components/Start'
 import  TextInputComp  from './components/TextInput'
 import  SelectPicker  from './components/SelectPicker'
 import  ModalComp  from './components/Modal'
-import  DatePicker  from './components/DatePicker'
+import  DatePickerComp  from './components/DatePicker'
 import  ToastAndroid  from './components/ToastAndroid'
 
 
@@ -32,7 +32,7 @@ export default function App() {
         <Stack.Screen name="TextInput" component={TextInputComp} options={{  title: 'TextInput', headerTintColor: '#1791e8' }} />
         <Stack.Screen name="Select i Picker" component={SelectPicker} options={{ title: 'Select i Picker', headerTintColor: '#518226' }}/>
         <Stack.Screen name="Modal" component={ModalComp} options={{ title: 'Modal', headerTintColor: '#e09d00'}}/>
-        <Stack.Screen name="DatePicker" component={DatePicker} options={{title: 'DatePicker', headerTintColor: '#ffffff', headerStyle: { backgroundColor: '#1a1a1a'}, headerTitleStyle: {alignSelf: 'center', right:25}}}/>
+        <Stack.Screen name="DatePicker" component={DatePickerComp} options={{title: 'DatePicker', headerTintColor: '#ffffff', headerStyle: { backgroundColor: '#1a1a1a'}, headerTitleStyle: {alignSelf: 'center', right:25}}}/>
         <Stack.Screen name="ToastAndroid" component={ToastAndroid} options={{ title: 'ToastAndroid', headerTintColor: '#e09d00'}}/>
         
         

@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'space-around',
       alignItems: 'center'
-
     },
     TextInputViewText: {
         borderColor: '#1791e8',
@@ -92,7 +91,27 @@ const styles = StyleSheet.create({
       fontSize: 20,
       top: -30
     },
-
+    DatePickerView:{
+      flex: 1,
+      justifyContent: 'space-around',
+      alignItems: 'center'
+    },
+    DatePickerViewCal:{
+      borderColor: '#1a1a1a',
+      backgroundColor: '#1a1a1a',
+      borderRadius: 40,
+      padding: 15,
+      width: 250,
+      alignItems: 'center'
+    },
+    DatePickerViewCalMid:{
+      borderColor: '#ffffff',
+      backgroundColor: '#ffffff',
+      borderRadius: 30,
+      width: 170,
+      height: 50,
+      justifyContent: "center",
+    },
     
   })
 
