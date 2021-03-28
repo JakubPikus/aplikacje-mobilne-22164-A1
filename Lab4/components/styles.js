@@ -72,6 +72,26 @@ const styles = StyleSheet.create({
       padding: 15,
       width: 250,
     },
+    SwitchView:{
+      backgroundColor: '#e09d00',
+      flex: 1,
+      alignItems: "center",
+      justifyContent: 'center',
+      padding: 60
+    },
+    SwitchModalView:{
+      backgroundColor: '#e09d00',
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "center",
+      
+    },
+    SwitchText: {
+      color: '#ffffff',
+      alignSelf: 'center',
+      fontSize: 20,
+      top: -30
+    },
    
 
     

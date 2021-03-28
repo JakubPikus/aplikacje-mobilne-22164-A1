@@ -1,5 +1,5 @@
-import React, { Component, Suspense, useState } from 'react';
-import { Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { View } from 'react-native';
 import Select from "./Select";
 import styles from './styles';
 
