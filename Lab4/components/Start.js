@@ -11,8 +11,8 @@ export default function Start({ navigation }) {
         <TouchableOpacity style={styles.startButton}  onPress={() => navigation.push('Select i Picker')}>
             <Text style={styles.startText} >Select i Picker</Text>
         </TouchableOpacity >
-        <TouchableOpacity style={styles.startButton}  onPress={() => navigation.push('Switch')}>
-            <Text style={styles.startText}>Switch</Text>
+        <TouchableOpacity style={styles.startButton}  onPress={() => navigation.push('Modal')}>
+            <Text style={styles.startText}>Modal</Text>
         </TouchableOpacity >
         <TouchableOpacity style={styles.startButton}  onPress={() => navigation.push('DatePicker')}>
             <Text style={styles.startText}>DatePicker</Text>

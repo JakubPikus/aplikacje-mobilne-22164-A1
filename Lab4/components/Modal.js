@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
-import { Text, View, Modal, Switch, TouchableOpacity} from 'react-native';
+import { Text, View, Modal, TouchableOpacity, Switch} from 'react-native';
 import styles from './styles';
 import { Icon } from 'react-native-elements'
 
 
 
-export default function SwitchComp() {
+export default function ModalComp() {
   const [modalVisible, setModalVisible] = useState(false);
     return (
-      <View style={styles.SwitchView}>
+      <View style={styles.ModalView}>
         <Modal
           animationType="fade"
           visible={modalVisible}
           onRequestClose={() => {
             setModalVisible(!modalVisible);
           }}>
-          <View style={styles.SwitchModalView}>
+          <View style={styles.ModalViewIn}>
             <View style={{top: 28}}>
-              <Text style={styles.SwitchText}>{Math.floor(Math.random()*100)}</Text>
+              <Text style={styles.ModalText}>{Math.floor(Math.random()*100)}</Text>
               <TouchableOpacity 
               onPress={() => setModalVisible(false)}>
                 <Icon raised
@@ -29,15 +29,13 @@ export default function SwitchComp() {
             </View>
           </View>
         </Modal>
-        <Text style={styles.SwitchText}>Pokaż pseudolosową liczbę</Text>
-        <TouchableOpacity 
-        onPress={() => setModalVisible(true)}>
-          <Icon raised
-            name='random'
-            type='font-awesome'
-            color='#e09d00'
-          />
-        </TouchableOpacity>
+        <Text style={styles.ModalText}>Pokaż pseudolosową liczbę</Text>
+        <Switch 
+        trackColor={{true: 'white', false: 'grey'}}
+        thumbColor='#FFF'
+        value={modalVisible} 
+        onValueChange={() => setModalVisible(true)}
+        />
       </View>
     );
   }
