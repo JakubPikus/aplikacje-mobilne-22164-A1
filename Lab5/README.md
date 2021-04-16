@@ -2,7 +2,7 @@
 
 <h2> Obsługa gestów użytkownika </h2>
 
-<p>Z menu głównego wybieramy interesujące nas podzadanie, które było do wykonania w Lab4</p>
+<p>Z menu głównego wybieramy interesujące nas podzadanie, które było do wykonania w Lab5</p>
 
 <img src="zrzuty/1.png" alt="index"  style="float: left;" />
 
