@@ -10,7 +10,7 @@
 
 # ScrollView 
 
-<p>Na pierwszym ekranie została wprowadzona informacja o polskim zawodniku PUDZIAN, na drugim zaś osiągnięcia krajowe drużyn sportowych.</p>
+<p>Na pierwszym ekranie została wprowadzona informacja o polskim zawodniku, na drugim zaś osiągnięcia krajowe drużyn sportowych.</p>
 <img src="zrzuty/2.png" alt="spread"  style="float: left;" />
 <br>
 <img src="zrzuty/3.png" alt="spread"  style="float: left;" />
