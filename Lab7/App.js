@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -13,7 +14,7 @@ import  Usun  from './components/Usun'
 const Stack = createStackNavigator();
 
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Menu">
@@ -29,17 +30,14 @@ export default function App() {
               alignSelf: 'center'
             },
             }}/>
-        <Stack.Screen name="Zarejestruj" component={Zarejestruj} options={{  title: 'Zarejestruj', headerTintColor: '#1791e8' }} />
-        <Stack.Screen name="Edycja" component={Edycja} options={{ title: 'Edycja', headerTintColor: '#518226' }}/>
-        <Stack.Screen name="Wyszukaj" component={Wyszukaj} options={{ title: 'Wyszukaj', headerTintColor: '#e09d00'}}/>
-        <Stack.Screen name="WyszukajAll" component={WyszukajAll} options={{title: 'Wyszukaj wszystko', headerTintColor: '#ffffff', headerStyle: { backgroundColor: '#1a1a1a'}, headerTitleStyle: {alignSelf: 'center', right:30}}}/>
-        <Stack.Screen name="Usun" component={Usun} options={{ title: 'Usuń', headerTintColor: '#e09d00'}}/>
-        
-        
-        
+        <Stack.Screen name="Zarejestruj" component={Zarejestruj} options={{  title: 'Zarejestruj', headerTintColor: '#ffffff', headerStyle: {backgroundColor: '#884444',},headerTitleStyle: { fontWeight: 'bold', alignSelf: 'center', right: 25 },}} />
+        <Stack.Screen name="Edycja" component={Edycja} options={{ title: 'Edycja', headerTintColor: '#ffffff', headerStyle: { backgroundColor: '#884444', }, headerTitleStyle: { fontWeight: 'bold', alignSelf: 'center', right: 25 }, }}/>
+        <Stack.Screen name="Wyszukaj" component={Wyszukaj} options={{ title: 'Wyszukaj', headerTintColor: '#ffffff', headerStyle: {backgroundColor: '#884444', },headerTitleStyle: {fontWeight: 'bold', alignSelf: 'center', right: 25 },}}/>
+        <Stack.Screen name="WyszukajAll" component={WyszukajAll} options={{title: 'Wyszukaj wszystko', headerTintColor: '#ffffff', headerStyle: { backgroundColor: '#884444', }, headerTitleStyle: { fontWeight: 'bold', alignSelf: 'center', right: 25 }, }}/>
+        <Stack.Screen name="Usun" component={Usun} options={{ title: 'Usuń', headerTintColor: '#ffffff', headerStyle: { backgroundColor: '#884444', },headerTitleStyle: { fontWeight: 'bold',alignSelf: 'center', right: 25},}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-
+export default App;

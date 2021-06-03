@@ -3,9 +3,9 @@ import { View, Text, SafeAreaView} from 'react-native';
 import styles from './styles';
 import Mybutton from './Mybutton';
 import Mytext from './Mytext';
-import { openDatabase } from 'react-native-sqlite-storage';
+import * as SQLite from 'expo-sqlite';
 
-var db = openDatabase({ name: 'UserDatabase.db' });
+var db = SQLite.openDatabase("UserDatabase.db");
 
 const Start = ({ navigation }) => {
     useEffect(() => {
@@ -28,33 +28,28 @@ const Start = ({ navigation }) => {
     }, []);
   
     return (
-      <SafeAreaView style={{ flex: 1  ,height:'100%' }}>
-        <View style={{ flex: 1,  backgroundColor: 'white',height:'100%' }}>
-          <View style={{ flex: 1 ,height:'100%'}}>
-            <Text style={{textAlign:'center',color:"black",fontSize:30 }}>SQLite Przykład</Text>
-            <Mybutton
-              title="Zarejestruj"
-              customClick={() => navigation.navigate('Zarejestruj')}
-            />
-            <Mybutton
-              title="Edycja"
-              customClick={() => navigation.navigate('Edycja')}
-            />
-            <Mybutton
-              title="Wyszukaj"
-              customClick={() => navigation.navigate('Wyszukaj')}
-            />
-            <Mybutton
-              title="Wypisz wszystko"
-              customClick={() => navigation.navigate('WyszukajAll')}
-            />
-            <Mybutton
-              title="Usuń"
-              customClick={() => navigation.navigate('Usun')}
-            />
-          </View>
-        </View>
-      </SafeAreaView>
+      <View style={{ flex: 1, flexDirection: 'column',justifyContent: 'space-around',alignItems: 'center'}}>
+        <Mybutton
+          title="Zarejestruj"
+          customClick={() => navigation.navigate('Zarejestruj')}
+        />
+        <Mybutton
+          title="Edycja"
+          customClick={() => navigation.navigate('Edycja')}
+        />
+        <Mybutton
+          title="Wyszukaj"
+          customClick={() => navigation.navigate('Wyszukaj')}
+        />
+        <Mybutton
+          title="Wypisz wszystko"
+          customClick={() => navigation.navigate('WyszukajAll')}
+        />
+        <Mybutton
+          title="Usuń"
+          customClick={() => navigation.navigate('Usun')}
+        />
+      </View>
     );
   };
   
